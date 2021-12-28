@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="LibFor5lab">
+      <HintPath>..\..\..\Лабораторная работа 4\LibFor5lab\LibFor5lab\bin\Debug\netcoreapp3.1\LibFor5lab.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

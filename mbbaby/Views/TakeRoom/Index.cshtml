@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Add room";
+}
+
+@using (Html.BeginForm("AddTeacher", "CountTeacher", FormMethod.Post))
+{
+    <div class="contaner">
+        <ul class="navbar-nav flex-grow-1">
+            <li class="nav-item">
+                <p>Имя аудитории </p>
+                <input type="text" name="Name" value="" />
+            </li>
+            <li class="nav-item">
+                <p>Идентификатор преподователя </p>
+                <input type="text" name="Idteacher" value="" />
+            </li>
+            <li class="nav-item">
+
+                @if (ViewBag.Message == null)
+                {
+                    <p>Количество занятых аудиторий: </p><p id="name" name="name">@ViewBag.name</p>}
+            </li>
+
+            <li class="nav-item">
+                <input class="btn btn-primary" @*name="calculate" *@ type="submit" value="Проверить">
+            </li>
+
+        </ul>
+    </div>}
